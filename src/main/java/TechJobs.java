@@ -120,7 +120,9 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("\n*****\nposition type: " + "[]" + "\nname: " + "[]" + "\nemployer: " +
-                "[]" + "\nlocation: " + "[]"+ "\ncore competency: " + "[]" + "\n*****");
+        for (HashMap<String, String> listing : someJobs){
+            System.out.println("\n*****\nposition type: " + listing.get("position type") + "\nname: " + listing.get("name") + "\nemployer: " +
+                    listing.get("employer") + "\nlocation: " + listing.get("location") + "\ncore competency: " + listing.get("core competency") + "\n*****");
+        }
     }
 }
