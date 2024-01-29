@@ -125,7 +125,7 @@ public class TechJobs {
         }
         else{
             for (HashMap<String, String> listing : someJobs){
-                System.out.println("\n0" +
+                System.out.println("\n" +
                         "*****\nposition type: " + listing.get("position type") + "\nname: " + listing.get("name") + "\nemployer: " +
                         listing.get("employer") + "\nlocation: " + listing.get("location") + "\ncore competency: " + listing.get("core competency") + "\n*****");
             }
